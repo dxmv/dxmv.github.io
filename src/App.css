@@ -1,0 +1,133 @@
+.App {
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--bg-secondary);
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  color: var(--text-primary);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.projects {
+  padding: 4rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.tech-stack {
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background-color: var(--bg-primary);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
