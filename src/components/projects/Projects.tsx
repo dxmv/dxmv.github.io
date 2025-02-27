@@ -1,7 +1,10 @@
+import FinishedProjects from "./FinishedProjects";
+import InDevelopment from "./InDevelopment";
 const Projects = () => {
     return (
-        <div>
-            <h1>Projects</h1>
+        <div className="flex flex-col gap-4 p-4">
+            <FinishedProjects />
+            <InDevelopment />
         </div>
     )
 }   
