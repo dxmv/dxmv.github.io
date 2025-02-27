@@ -1,7 +1,10 @@
+import Hero from "./Hero";
+import HomePortfolio from "./HomePortfolio";
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+           <Hero />
+           <HomePortfolio />
         </div>
     )
 }   
