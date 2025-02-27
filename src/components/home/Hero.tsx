@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Instagram, Youtube } from "lucide-react"
+import SocialMediaLinks from "../reusable/SocialMediaLinks"
 
 // tags that describe me
 const tags = [
@@ -32,16 +32,3 @@ const Hero = () => {
 
 export default Hero
 
-/**
- * Component for social media links
- * @returns Social media links component
- */
-const SocialMediaLinks = () => {
-  return <div className="flex flex-row gap-2 mt-4">
-    <div><Linkedin /></div>
-    <div><Github /></div>
-    <div><Twitter /></div>
-    <div><Instagram /></div>
-    <div><Youtube /></div>
-  </div>
-}
