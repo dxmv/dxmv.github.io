@@ -2,7 +2,7 @@ import Hero from "./Hero";
 import HomePortfolio from "./HomePortfolio";
 const Home = () => {
     return (
-        <div>
+        <div className="bg-dark-black border-b border-light-purple">
            <Hero />
            <HomePortfolio />
         </div>

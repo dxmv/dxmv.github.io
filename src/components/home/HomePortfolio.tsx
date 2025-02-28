@@ -33,10 +33,10 @@ const projects = [
  */
 const HomePortfolio = () => {
   return (
-    <div className="w-full h-screen p-4">
+    <div className="w-full h-screen px-20">
       {/* Title and description */}
-      <h2 className="text-2xl font-bold">Things I've worked on</h2>
-      <h4 className="text-lg mb-4">Explore my projects</h4>
+      <h2 className="text-2xl font-bold text-dark-purple">Things I've worked on</h2>
+      <h4 className="text-lg mb-4 text-light-white">Explore my projects</h4>
 
       {/* Projects */}
       <div className="grid grid-cols-2 gap-4">

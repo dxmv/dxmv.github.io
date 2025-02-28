@@ -39,11 +39,11 @@ const InDevelopment = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto py-8 px-4">
+    <div className="w-full py-8 px-4">
       {/* Section Header */}
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-800">In Development</h2>
-        <p className="text-gray-600 mt-2">
+        <h2 className="text-3xl font-bold text-dark-purple">In Development</h2>
+        <p className="text-light-white mt-2">
           Current projects I'm actively working on and building
         </p>
       </div>

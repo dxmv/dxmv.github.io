@@ -20,20 +20,20 @@
         - [x] contact form
         - [x] social media links
 - [ ] Colors
-    - [ ] Home
+    - [x] Home
     - [x] Footer
-    - [ ] Navbar
-    - [ ] Contact form
-    - [ ] Social media links
-    - [ ] Project cards
-- [ ] Animations
+    - [x] Navbar
+    - [x] Contact form
+    - [x] Social media links
+    - [x] Project cards
+- [ ] Real data
 - [ ] Better pictures
+- [ ] Animations
 - [ ] Logo
 - [ ] Favicon
 - [ ] Social media links
 - [ ] Responsive design
 - [ ] Smooth scroll
-
-
+- [ ] Contact form works 
 - [ ] Create a error page
 - [ ] Create a loading page

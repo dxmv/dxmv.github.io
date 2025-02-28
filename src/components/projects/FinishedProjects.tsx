@@ -1,17 +1,20 @@
 import { FinishedProject } from './types';
-import { Github, Globe, Twitter } from 'lucide-react';
+import ProjectSection from './ProjectSection';
 
 const FinishedProjects = () => {
   const projects: FinishedProject[] = [
     {
       title: "E-Commerce Platform",
+      tagline: "Ran up the bag, stopped doing it cause its boring",
       description: "A modern e-commerce solution",
       longDescription: "A fully featured e-commerce platform built with React and Node.js. Includes features like user authentication, product management, cart functionality, and payment processing with Stripe.",
       completionDate: "February 2024",
       stats: [
-        { label: "Total Sales", value: "$50k+" },
-        { label: "Active Users", value: "5k" },
-        { label: "Countries", value: "25" }
+        { label: "Revenue", value: "300K" },
+        { label: "Views", value: "10M" },
+        { label: "Videos Posted", value: "1K" },
+        { label: "Products Sold", value: "50K" },
+        { label: "Active Users", value: "5K" }
       ],
       imageUrl: "/projects/ecommerce.jpg",
       socialLinks: [
@@ -55,25 +58,12 @@ const FinishedProjects = () => {
     }
   ];
 
-  const getSocialIcon = (platform: string) => {
-    switch (platform) {
-      case 'github':
-        return <Github className="w-5 h-5" />;
-      case 'website':
-        return <Globe className="w-5 h-5" />;
-      case 'twitter':
-        return <Twitter className="w-5 h-5" />;
-      default:
-        return null;
-    }
-  };
-
   return (
-    <div className="max-w-6xl mx-auto py-8 px-4">
+    <div className="w-full py-8 px-4">
       {/* Section Header */}
       <div className="mb-12">
-        <h2 className="text-3xl font-bold text-gray-800">Finished Projects</h2>
-        <p className="text-gray-600 mt-2">
+        <h2 className="text-3xl font-bold text-dark-purple">Finished Projects</h2>
+        <p className="text-light-white mt-2">
           Projects I've completed and launched
         </p>
       </div>
@@ -81,72 +71,11 @@ const FinishedProjects = () => {
       {/* Projects List */}
       <div className="space-y-16">
         {projects.map((project, index) => (
-          <div 
-            key={project.title}
-            className="flex flex-col md:flex-row gap-8 items-center"
-          >
-            {/* Image Section */}
-            {index % 2 === 0 ? null : (
-              <div className="w-full md:w-1/2">
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.title}
-                  className="w-full h-64 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            )}
-
-            {/* Content Section - Added border and padding */}
-            <div className="w-full md:w-1/2">
-              <div className="space-y-4 border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-2xl font-bold">{project.title}</h3>
-                
-                {/* Stats */}
-                <div className="flex gap-6">
-                  {project.stats.map((stat, statIndex) => (
-                    <div key={statIndex} className="flex flex-col">
-                      <span className="text-sm text-gray-500">{stat.label}</span>
-                      <span className="font-semibold">{stat.value}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Description */}
-                <p className="text-gray-600">{project.longDescription}</p>
-
-                {/* Completion Date */}
-                <p className="text-sm text-gray-500">
-                  Completed: {project.completionDate}
-                </p>
-
-                {/* Social Links */}
-                <div className="flex gap-4">
-                  {project.socialLinks.map((link, linkIndex) => (
-                    <a
-                      key={linkIndex}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-gray-900 transition-colors"
-                    >
-                      {getSocialIcon(link.platform)}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Image Section (right side) */}
-            {index % 2 === 0 ? (
-              <div className="w-full md:w-1/2">
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.title}
-                  className="w-full h-64 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-            ) : null}
-          </div>
+          <ProjectSection 
+            key={project.title} 
+            project={project} 
+            index={index} 
+          />
         ))}
       </div>
     </div>
