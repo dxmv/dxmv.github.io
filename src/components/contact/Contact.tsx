@@ -5,27 +5,110 @@ import SocialMediaLinks from "../reusable/SocialMediaLinks"
  * @returns Contact component
  */
 const Contact = () => {
-  return <div className="h-screen flex flex-col justify-center items-center">
-    {/* Contact title */}
-    <h1 className="text-4xl font-bold mb-4">Contact me</h1>
-    {/* Contact description */}
-    <p className="text-lg mb-8 w-2/3 text-center mb-8">
-      I'm always looking for <b>new opportunities</b> to work on exciting projects.
-      Whether you have a question, a project in mind, or just want to say hello,
-      I'd love to hear from you.
-    </p>
-    {/* Contact form */}
-    <form className="flex flex-col gap-4 mb-8">
-      <div className="flex gap-2 w-1/2">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
+  return (
+    <div className="min-h-screen flex flex-col justify-center items-center py-16 px-4">
+
+      {/* Contact title */}
+      <h1 className="text-4xl font-bold mb-2">Contact me</h1>
+      {/* Social media links */}
+      <div className="mb-4">
+        <SocialMediaLinks />
       </div>
-      <textarea placeholder="Message" />
-      <button type="submit">Send</button>
-    </form>
-    {/* Social media links */}
-    <SocialMediaLinks />
-  </div>
+      {/* Contact description */}
+      <p className="text-lg mb-8 max-w-2xl text-center">
+        I'm always looking for <b>new opportunities</b> to work on exciting projects.
+        Whether you have a question, a project in mind, or just want to say hello,
+        I'd love to hear from you.
+      </p>
+      
+      {/* Contact form */}
+      <form className="w-full max-w-2xl flex flex-col gap-6">
+        {/* Name fields */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex-1">
+            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
+              First Name
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div className="flex-1">
+            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
+              Last Name
+            </label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+              placeholder="Doe"
+              required
+            />
+          </div>
+        </div>
+
+        {/* Email field */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+            placeholder="john@example.com"
+            required
+          />
+        </div>
+
+        {/* Subject field */}
+        <div>
+          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+            Subject
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+            placeholder="Project Inquiry"
+            required
+          />
+        </div>
+
+        {/* Message field */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={6}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-none"
+            placeholder="Your message here..."
+            required
+          />
+        </div>
+
+        {/* Submit button */}
+        <button
+          type="submit"
+          className="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors self-center"
+        >
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  )
 }
 
 export default Contact

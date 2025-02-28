@@ -4,9 +4,9 @@
  */
 const FooterAbout = () => {
     return (
-        <div>
+        <div className="border-r border-light-white">
             {/* TODO : LOGO HERE */}
-            <h3 className="text-xl font-bold mb-4">About Me</h3>
+            <h3 className="text-xl font-bold mb-4 text-light-purple">About Me</h3>
             <p className="text-gray-300">
                 PattyBuilds is dedicated to creating innovative web solutions
                 and sharing knowledge with the developer community. We focus

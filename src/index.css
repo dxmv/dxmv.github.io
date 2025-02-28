@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme{
+    --color-dark-black: #121212;
+    --color-light-white: #E6E8E6;
+    --color-dark-purple: #731DD8;
+    --color-light-purple: #E574BC;
+    --color-blue: #2081C3;
+}
+
+.hover\:text-light-purple:hover {
+    color: var(--color-light-purple);
+}
