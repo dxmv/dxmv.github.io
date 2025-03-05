@@ -31,7 +31,8 @@ const FinishedProjects = () => {
       stats: [
         { label: "Teams", value: "100+" },
         { label: "Tasks Completed", value: "50k" },
-        { label: "Time Saved", value: "2000h" }
+        { label: "Time Saved", value: "2000h" },
+        { label: "Active Users", value: "5K" }
       ],
       imageUrl: "/projects/task-app.jpg",
       socialLinks: [
@@ -59,7 +60,7 @@ const FinishedProjects = () => {
   ];
 
   return (
-    <div className="w-full py-8 px-4">
+    <div className="w-full py-4 px-4">
       {/* Section Header */}
       <div className="mb-12">
         <h2 className="text-3xl font-bold text-dark-purple">Finished Projects</h2>

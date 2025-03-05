@@ -4,38 +4,27 @@ import { InDevelopmentProject } from './types';
 const InDevelopment = () => {
   const projects: InDevelopmentProject[] = [
     {
-      title: "AI Code Assistant",
-      description: "An intelligent coding assistant that helps developers write better code faster using advanced AI models.",
-      startDate: "March 2024",
+      title: "DreamGPT",
+      description: "Mobile app that analyzes your dreams and provides insights and interpretations.",
+      startDate: "April 2025",
       stats: [
-        { label: "Beta Users", value: "500+" },
-        { label: "Code Reviews", value: "2.5k" },
-        { label: "Accuracy", value: "95%" }
+        { label: "Front-end", value: "React Native" },
+        { label: "Back-end", value: "Go" },
+        { label: "Database", value: "Supabase" }
       ],
-      imageUrl: "/projects/ai-assistant.jpg"
+      imageUrl: ""
     },
     {
-      title: "CloudSync Platform",
-      description: "A multi-cloud management platform that simplifies cloud infrastructure deployment and monitoring.",
-      startDate: "January 2024",
+      title: "Marketing helper",
+      description: "An app that helps you save the videos, notes and summaries of videos that will help you with your marketing.",
+      startDate: "May 2024",
       stats: [
-        { label: "Active Users", value: "250" },
-        { label: "Servers Managed", value: "1k+" },
-        { label: "Uptime", value: "99.9%" }
+        { label: "Front-end", value: "React Native" },
+        { label: "Back-end", value: "Go" },
+        { label: "Database", value: "Supabase" }
       ],
-      imageUrl: "/projects/cloud-sync.jpg"
+      imageUrl: ""
     },
-    {
-      title: "DevMetrics Dashboard",
-      description: "Real-time analytics dashboard for development teams to track performance metrics and project progress.",
-      startDate: "February 2024",
-      stats: [
-        { label: "Teams Using", value: "25" },
-        { label: "Daily Users", value: "300" },
-        { label: "Data Points", value: "50k" }
-      ],
-      imageUrl: "/projects/dev-metrics.jpg"
-    }
   ];
 
   return (

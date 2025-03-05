@@ -19,7 +19,7 @@
     - [x] contact page
         - [x] contact form
         - [x] social media links
-- [ ] Colors
+- [x] Colors
     - [x] Home
     - [x] Footer
     - [x] Navbar
@@ -27,6 +27,12 @@
     - [x] Social media links
     - [x] Project cards
 - [ ] Real data
+    - [ ] Crypto tracker
+    - [ ] Hr interview
+    - [ ] YT app
+    - [ ] Fitness app
+    - [ ] Ufc match predictor
+    - [x] In development
 - [ ] Better pictures
 - [ ] Animations
 - [ ] Logo

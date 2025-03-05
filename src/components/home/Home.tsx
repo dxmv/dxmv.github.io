@@ -1,10 +1,8 @@
 import Hero from "./Hero";
-import HomePortfolio from "./HomePortfolio";
 const Home = () => {
     return (
-        <div className="bg-dark-black border-b border-light-purple">
+        <div className="bg-dark-black px-4 ">
            <Hero />
-           <HomePortfolio />
         </div>
     )
 }   

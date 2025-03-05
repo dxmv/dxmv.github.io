@@ -31,13 +31,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
 
       {/* Right side - Project image */}
-      <div className="w-48 h-32 flex-shrink-0">
-        <img 
-          src={project.imageUrl} 
+      {project.imageUrl !== "" && (
+        <div className="w-48 h-32 flex-shrink-0">
+          <img 
+            src={project.imageUrl} 
           alt={project.title}
-          className="w-full h-full object-cover rounded-lg"
-        />
-      </div>
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      )}
     </div>
   );
 };
