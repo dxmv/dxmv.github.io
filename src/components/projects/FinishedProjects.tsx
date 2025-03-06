@@ -19,37 +19,64 @@ const FinishedProjects = () => {
       ]
     },
     {
-      title: "Task Management App",
-      tagline: "Smart task organization tool",
-      longDescription: "An intuitive task management application that helps teams collaborate effectively. Features include real-time updates, task delegation, progress tracking, and detailed analytics.",
-      completionDate: "December 2023",
+      title: "UFC Match Predictor",
+      tagline: "Predict UFC matches with AI",
+      longDescription: "An AI-powered tool that predicts the outcome of UFC matches. It uses a combination of data from past matches, fighter stats, and other relevant information to make predictions.",
+      completionDate: "January 2025",
       stats: [
-        { label: "Teams", value: "100+" },
-        { label: "Tasks Completed", value: "50k" },
-        { label: "Time Saved", value: "2000h" },
-        { label: "Active Users", value: "5K" }
+        { label: "Backend", value: "Flask" },
+        { label: "Frontend", value: "React" },
+        { label: "Accuracy", value: "70%" },
       ],
-      imageUrl: "/projects/task-app.jpg",
+      imageUrl: "/projects/ufc-match-predictor.png",
       socialLinks: [
-        { platform: "github", url: "https://github.com/username/taskapp" },
-        { platform: "website", url: "https://taskapp.com" }
+        { platform: "github", url: "https://github.com/dxmv/ufc-match-predictor" },
       ]
     },
     {
-      title: "Social Media Analytics",
-      tagline: "Advanced social media metrics",
-      longDescription: "A comprehensive analytics platform for social media managers. Provides detailed insights, engagement metrics, and AI-powered recommendations for content strategy.",
-      completionDate: "October 2023",
+      title: "HR Interview Simulator",
+      tagline: "Simulate HR interviews with AI",
+      longDescription: "A tool that simulates HR interviews with AI. It uses a combination of data from past interviews, interviewer stats, cv data and other relevant information to make predictions. During the development of this project, I learned a lot about AI and how it works. I also learned a lot about building a fast, efficient and scalable backend & frontend for the project.",
+      completionDate: "March 2025",
       stats: [
-        { label: "Processed Posts", value: "1M+" },
-        { label: "Business Users", value: "2k" },
-        { label: "ROI Increase", value: "40%" }
+        { label: "Backend", value: "Flask" },
+        { label: "Frontend", value: "React" },
+        { label: "Model", value: "Mistral" },
       ],
-      imageUrl: "/projects/social-analytics.jpg",
+      imageUrl: "/projects/hr-interview-simulator.png",
       socialLinks: [
-        { platform: "github", url: "https://github.com/username/social-analytics" },
-        { platform: "website", url: "https://social-metrics.com" },
-        { platform: "twitter", url: "https://twitter.com/socialmetrics" }
+        { platform: "github", url: "https://github.com/dxmv/hr-interview-simulator" },
+      ]
+    },
+    {
+      title: "Crypto-currency wallet manager",
+      tagline: "Manage your crypto-currency wallets",
+      longDescription: "A webapp that helps you track and manage your crypto-currency wallets. During the development of this project, I learned a lot about crypto-currency and how it works. I also learned a lot about using third party APIs to get data and use it in my project.",
+      completionDate: "October 2024",
+      stats: [
+        { label: "Backend", value: "Spring Boot" },
+        { label: "Frontend", value: "React" },
+        { label: "Database", value: "PostgreSQL" },
+      ],
+      imageUrl: "/projects/crypto-currency-wallet-manager.png",
+      socialLinks: [
+        { platform: "github", url: "https://github.com/dxmv/crypto-currency-wallet-manager" },
+      ],
+
+    },
+    {
+      title: "Fitness Tracker",
+      tagline: "Track your fitness",
+      longDescription: "A mobile app that helps you track your workouts and routines. The app also helps you improve your form and technique by providing you with video tutorials of the correct movements and how to do them. Gave up on the app because of new profitable app ideas and college.",
+      completionDate: "October 2024",
+      stats: [
+        { label: "Backend", value: "Spring Boot" },
+        { label: "Frontend", value: "React Native" },
+        { label: "Database", value: "PostgreSQL" },
+      ],
+      imageUrl: "/projects/fitness-tracker.png",
+      socialLinks: [
+        { platform: "github", url: "https://github.com/dxmv/fitness-tracker" },
       ]
     }
   ];

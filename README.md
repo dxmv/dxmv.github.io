@@ -26,13 +26,13 @@
     - [x] Contact form
     - [x] Social media links
     - [x] Project cards
-- [ ] Add more tech on home page
-- [ ] Real data
-    - [ ] Crypto tracker
-    - [ ] Hr interview
-    - [ ] YT app
-    - [ ] Fitness app
-    - [ ] Ufc match predictor
+- [x] Add more tech on home page
+- [x] Real data
+    - [x] Crypto tracker
+    - [x] Nanodb
+    - [x] Hr interview
+    - [x] Fitness app
+    - [x] Ufc match predictor
     - [x] In development
 - [ ] Better pictures
 - [ ] Animations

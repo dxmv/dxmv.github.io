@@ -1,6 +1,7 @@
+import { MapPin } from "lucide-react"
 import SocialMediaLinks from "../reusable/SocialMediaLinks"
-import { FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaAws } from 'react-icons/fa'
-import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiJest } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa'
+import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiSpringboot, SiFlask, SiCplusplus } from 'react-icons/si'
 
 // tags that describe me
 const tags = [
@@ -15,13 +16,15 @@ const technologies = [
   { icon: <FaNodeJs className="w-12 h-12" />, name: "Node.js" },
   { icon: <SiTypescript className="w-12 h-12" />, name: "TypeScript" },
   { icon: <FaPython className="w-12 h-12" />, name: "Python" },
+  { icon: <FaJava className="w-12 h-12" />, name: "Java" },
+  { icon: <SiSpringboot className="w-12 h-12" />, name: "Spring" },
+  { icon: <SiFlask className="w-12 h-12" />, name: "Flask" },
   { icon: <SiTailwindcss className="w-12 h-12" />, name: "Tailwind CSS" },
   { icon: <SiPostgresql className="w-12 h-12" />, name: "PostgreSQL" },
   { icon: <SiMongodb className="w-12 h-12" />, name: "MongoDB" },
   { icon: <FaDocker className="w-12 h-12" />, name: "Docker" },
   { icon: <FaGitAlt className="w-12 h-12" />, name: "Git" },
-  { icon: <FaAws className="w-12 h-12" />, name: "AWS" },
-  { icon: <SiJest className="w-12 h-12" />, name: "Jest" },
+  { icon: <SiCplusplus className="w-12 h-12" />, name: "C++" },
 ]
 
 const heroBackground = "https://cdn.midjourney.com/0af8f9c1-af89-4f64-b038-2b453f18690a/0_1.png"
@@ -51,9 +54,9 @@ const Hero = () => {
         {/* Left column - Text content */}
         <div className="flex-1 max-w-2xl">
           <span className="text-l text-light-white">Hello, my name is</span>
-          <h1 className="font-bold text-6xl text-dark-purple">Dimitrije Stepanović</h1>
-          <h2 className="text-xl text-blue mb-6 mt-1">I like to build cool things</h2>
-          <div className="flex flex-wrap gap-2 mb-8">
+          <h1 className="font-bold mt-1 text-6xl text-dark-purple">Dimitrije Stepanović</h1>
+          <h2 className="flex mt-1 items-center gap-2 font-bold text-2xl text-blue"> <MapPin size={24}/> Belgrade, Serbia</h2>
+          <div className="flex flex-wrap gap-2 my-8">
             {tags.map((tag) => (
               <HeroTag key={tag} tag={tag} />
             ))}
