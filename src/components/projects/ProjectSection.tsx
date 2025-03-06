@@ -34,11 +34,11 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
       )}
 
       {/* Content Section */}
-      <div className="w-full md:w-3/4 h-full bg-dark-purple hover:bg-blue hover:cursor-pointer">
+      <div className="w-full md:w-3/4 h-full bg-dark-purple rounded-lg hover:cursor-pointer">
         <div className="space-y-6 border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div>
-            <h3 className="text-2xl font-bold text-light-purple">{project.title}</h3>
-            <p className="text-light-white mt-2 text-lg">
+            <h3 className="text-2xl font-bold text-light-white">{project.title}</h3>
+            <p className="text-light-purple mt-2 text-lg">
               {project.tagline}
             </p>
           </div>
@@ -50,11 +50,10 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
                 key={statIndex} 
                 className="flex flex-col items-center"
               >
-                <span className="text-4xl font-bold text-light-white">
+                <span className="text-4xl font-bold text-blue">
                   {stat.value}
-                  <span className="text-light-purple">+</span>
                 </span>
-                <span className="text-sm text-gray-400 mt-2 uppercase tracking-wide">
+                <span className="text-sm text-dark-black mt-2 uppercase tracking-wide">
                   {stat.label}
                 </span>
               </div>

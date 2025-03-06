@@ -4,9 +4,10 @@ import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiJest } from 're
 
 // tags that describe me
 const tags = [
+  "Builder",
   "Software Engineer",
   "Full Stack Developer",
-  "Web Developer",
+  "Content Creator",
 ]
 
 const technologies = [
@@ -31,7 +32,7 @@ const heroBackground = "https://cdn.midjourney.com/0af8f9c1-af89-4f64-b038-2b453
  */
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center h-screen px-4 w-screen relative">
+    <div className="flex items-center justify-center h-screen px-8 w-screen relative">
       {/* Dark overlay */}
       <div className="absolute inset-0 z-10" style={{backgroundColor: 'rgba(0, 0, 0, 0.6)'}}></div>
       
@@ -50,7 +51,7 @@ const Hero = () => {
         {/* Left column - Text content */}
         <div className="flex-1 max-w-2xl">
           <span className="text-l text-light-white">Hello, my name is</span>
-          <h1 className="font-bold text-5xl text-dark-purple">Dimitrije Stepanović</h1>
+          <h1 className="font-bold text-6xl text-dark-purple">Dimitrije Stepanović</h1>
           <h2 className="text-xl text-blue mb-6 mt-1">I like to build cool things</h2>
           <div className="flex flex-wrap gap-2 mb-8">
             {tags.map((tag) => (
@@ -80,7 +81,7 @@ const Hero = () => {
 
 const HeroTag = ({ tag }: { tag: string }) => {
   return (
-    <div key={tag} className="bg-light-purple px-4 py-2 rounded-lg text-dark-black hover:bg-dark-purple hover:text-light-white hover:cursor-pointer transition-colors">
+    <div key={tag} className="bg-light-purple text-light-white px-4 py-2 rounded-lg hover:bg-dark-purple hover:text-light-white hover:cursor-pointer transition-colors">
       {tag}
     </div>
   )

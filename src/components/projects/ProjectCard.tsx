@@ -6,15 +6,15 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="hover:bg-dark-purple hover:text-light-white flex items-center justify-between p-4 mb-4 bg-light-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+  <div className="hover:bg-blue  hover:text-light-white flex items-center justify-between p-4 mb-4 bg-light-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
       {/* Left side - Project info */}
       <div className="flex-1 pr-6">
-        <h3 className="text-xl font-bold mb-2 text-light-purple">{project.title}</h3>
+        <h3 className="text-xl font-bold mb-2 text-dark-purple">{project.title}</h3>
         
         {/* Stats */}
         <div className="flex gap-4 mb-2">
           {project.stats.map((stat, index) => (
-            <div key={index} className="flex flex-col text-blue">
+            <div key={index} className="flex flex-col text-light-purple">
               <span className="text-sm">{stat.label}</span>
               <span className="font-semibold">{stat.value}</span>
             </div>

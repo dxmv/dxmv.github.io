@@ -23,7 +23,7 @@ const Navbar = () => {
                         <NavLink 
                             to="/" 
                             className={({ isActive }) => 
-                                `transition-colors ${isActive ? 'text-light-purple underline' : 'hover:text-dark-purple'}`
+                                `transition-colors ${isActive ? 'text-light-purple ' : 'hover:text-dark-purple'}`
                             }
                         >
                             Home
@@ -31,7 +31,7 @@ const Navbar = () => {
                         <NavLink 
                             to="/projects" 
                             className={({ isActive }) => 
-                                `transition-colors ${isActive ? 'text-light-purple underline' : 'hover:text-dark-purple'}`
+                                `transition-colors ${isActive ? 'text-light-purple' : 'hover:text-dark-purple'}`
                             }
                         >
                             Projects
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <NavLink 
                             to="/contact" 
                             className={({ isActive }) => 
-                                `transition-colors ${isActive ? 'text-light-purple underline' : 'hover:text-dark-purple'}`
+                                `transition-colors ${isActive ? 'text-light-purple' : 'hover:text-dark-purple'}`
                             }
                         >
                             Contact

@@ -17,7 +17,7 @@ const InDevelopment = () => {
     {
       title: "Marketing helper",
       description: "An app that helps you save the videos, notes and summaries of videos that will help you with your marketing.",
-      startDate: "May 2024",
+      startDate: "May 2025",
       stats: [
         { label: "Front-end", value: "React Native" },
         { label: "Back-end", value: "Go" },
@@ -25,6 +25,17 @@ const InDevelopment = () => {
       ],
       imageUrl: ""
     },
+    {
+      title: "NFT collection on Solana",
+      description: "An NFT collection on Solana.",
+      startDate: "April 2025",
+      stats: [
+        { label: "Followers", value: "5000" },
+        { label: "Volumne", value: "? SOL" },
+        { label: "Impressions", value: "5M+" }
+      ],
+      imageUrl: ""
+    }
   ];
 
   return (

@@ -12,16 +12,12 @@ export interface InDevelopmentProject {
 export interface FinishedProject {
   title: string;
   tagline: string;
-  description: string;
   longDescription: string;
   completionDate: string;
-  stats: [
-    { label: string; value: string },
-    { label: string; value: string },
-    { label: string; value: string },
-    { label: string; value: string },
-    { label: string; value: string }
-  ];
+  stats: {
+    label: string;
+    value: string;
+  }[];
   imageUrl: string;
   socialLinks: {
     platform: string;

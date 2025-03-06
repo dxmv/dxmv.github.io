@@ -4,28 +4,23 @@ import ProjectSection from './ProjectSection';
 const FinishedProjects = () => {
   const projects: FinishedProject[] = [
     {
-      title: "E-Commerce Platform",
-      tagline: "Ran up the bag, stopped doing it cause its boring",
-      description: "A modern e-commerce solution",
-      longDescription: "A fully featured e-commerce platform built with React and Node.js. Includes features like user authentication, product management, cart functionality, and payment processing with Stripe.",
-      completionDate: "February 2024",
+      title: "NanoDB",
+      tagline: "A simple, fast, and efficient database, written in C++.",
+      longDescription: "Developed a simple, fast, and efficient database, in C++. Inspired by SQLite, it is a single file database that is easy to use and integrate into any project. It's used in the same way as SQLite, and you can do everything that you can do with SQLite. During the development of this project, I learned a lot about databases and how they work. I also learned a lot about C++ and how to use it to build fast and efficient applications.",
+      completionDate: "March 2025",
       stats: [
-        { label: "Revenue", value: "300K" },
-        { label: "Views", value: "10M" },
-        { label: "Videos Posted", value: "1K" },
-        { label: "Products Sold", value: "50K" },
-        { label: "Active Users", value: "5K" }
+        { label: "Language", value: "C++" },
+        { label: "Platform", value: "Linux" },
+        { label: "Inspired by", value: "SQLite" },
       ],
-      imageUrl: "/projects/ecommerce.jpg",
+      imageUrl: "/projects/nanodb.png",
       socialLinks: [
-        { platform: "github", url: "https://github.com/username/ecommerce" },
-        { platform: "website", url: "https://ecommerce-demo.com" },
-        { platform: "twitter", url: "https://twitter.com/ecommerce" }
+        { platform: "github", url: "https://github.com/dxmv/nano_db" },
       ]
     },
     {
       title: "Task Management App",
-      description: "Smart task organization tool",
+      tagline: "Smart task organization tool",
       longDescription: "An intuitive task management application that helps teams collaborate effectively. Features include real-time updates, task delegation, progress tracking, and detailed analytics.",
       completionDate: "December 2023",
       stats: [
@@ -42,7 +37,7 @@ const FinishedProjects = () => {
     },
     {
       title: "Social Media Analytics",
-      description: "Advanced social media metrics",
+      tagline: "Advanced social media metrics",
       longDescription: "A comprehensive analytics platform for social media managers. Provides detailed insights, engagement metrics, and AI-powered recommendations for content strategy.",
       completionDate: "October 2023",
       stats: [

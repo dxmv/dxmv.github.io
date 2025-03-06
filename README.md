@@ -26,6 +26,7 @@
     - [x] Contact form
     - [x] Social media links
     - [x] Project cards
+- [ ] Add more tech on home page
 - [ ] Real data
     - [ ] Crypto tracker
     - [ ] Hr interview

@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 const Home = () => {
     return (
-        <div className="bg-dark-black px-4 ">
+        <div className="bg-dark-black ">
            <Hero />
         </div>
     )
