@@ -23,7 +23,7 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
   return (
     <div className="flex flex-col md:flex-row gap-8 items-center">
       {/* Image Section */}
-      {index % 2 === 0 ? null : (
+      {/* {index % 2 === 0 && project.imageUrl !== null ? null : (
         <div className="w-full md:w-1/4 h-full">
           <img 
             src={project.imageUrl} 
@@ -31,13 +31,13 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
-      )}
+      )} */}
 
       {/* Content Section */}
-      <div className="w-full md:w-3/4 h-full bg-dark-purple rounded-lg hover:cursor-pointer">
+      <div className={`${project.imageUrl !== null ? 'w-3/4' : 'w-full'} h-full bg-light-white rounded-lg hover:cursor-pointer hover:opacity-90 transition-opacity `}>
         <div className="space-y-6 border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
           <div>
-            <h3 className="text-2xl font-bold text-light-white">{project.title}</h3>
+            <h3 className="text-3xl font-bold text-dark-purple">{project.title}</h3>
             <p className="text-light-purple mt-2 text-lg">
               {project.tagline}
             </p>
@@ -50,21 +50,21 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
                 key={statIndex} 
                 className="flex flex-col items-center"
               >
-                <span className="text-4xl font-bold text-blue">
-                  {stat.value}
-                </span>
                 <span className="text-sm text-dark-black mt-2 uppercase tracking-wide">
                   {stat.label}
+                </span>
+                <span className="text-2xl font-bold text-blue">
+                  {stat.value}
                 </span>
               </div>
             ))}
           </div>
 
           {/* Description */}
-          <p className="text-light-white">{project.longDescription}</p>
+          <p className="text-dark-black">{project.longDescription}</p>
 
           {/* Completion Date */}
-          <p className="text-sm text-light-white">
+          <p className="text-sm text-light-purple">
             Completed: {project.completionDate}
           </p>
 
@@ -76,7 +76,7 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-light-white hover:text-light-purple transition-colors"
+                className="text-dark-purple hover:text-light-purple transition-colors"
               >
                 {getSocialIcon(link.platform)}
               </a>
@@ -86,7 +86,7 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
       </div>
 
       {/* Image Section (right side) */}
-      {index % 2 === 0 ? (
+      {/* {index % 2 === 0 && project.imageUrl !== null ? (
         <div className="w-full md:w-1/4 h-full">
           <img 
             src={project.imageUrl} 
@@ -94,7 +94,7 @@ const ProjectSection = ({ project, index }: ProjectSectionProps) => {
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };

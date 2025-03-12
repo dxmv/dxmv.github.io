@@ -13,7 +13,7 @@ const FinishedProjects = () => {
         { label: "Platform", value: "Linux" },
         { label: "Inspired by", value: "SQLite" },
       ],
-      imageUrl: "/projects/nanodb.png",
+      imageUrl: null,
       socialLinks: [
         { platform: "github", url: "https://github.com/dxmv/nano_db" },
       ]
@@ -28,7 +28,7 @@ const FinishedProjects = () => {
         { label: "Frontend", value: "React" },
         { label: "Accuracy", value: "70%" },
       ],
-      imageUrl: "/projects/ufc-match-predictor.png",
+      imageUrl: null,
       socialLinks: [
         { platform: "github", url: "https://github.com/dxmv/ufc-match-predictor" },
       ]
@@ -43,7 +43,7 @@ const FinishedProjects = () => {
         { label: "Frontend", value: "React" },
         { label: "Model", value: "Mistral" },
       ],
-      imageUrl: "/projects/hr-interview-simulator.png",
+      imageUrl: null,
       socialLinks: [
         { platform: "github", url: "https://github.com/dxmv/hr-interview-simulator" },
       ]
@@ -58,7 +58,7 @@ const FinishedProjects = () => {
         { label: "Frontend", value: "React" },
         { label: "Database", value: "PostgreSQL" },
       ],
-      imageUrl: "/projects/crypto-currency-wallet-manager.png",
+      imageUrl: null,
       socialLinks: [
         { platform: "github", url: "https://github.com/dxmv/crypto-currency-wallet-manager" },
       ],
@@ -66,7 +66,7 @@ const FinishedProjects = () => {
     },
     {
       title: "Fitness Tracker",
-      tagline: "Track your fitness",
+      tagline: "Track your workouts and routines",
       longDescription: "A mobile app that helps you track your workouts and routines. The app also helps you improve your form and technique by providing you with video tutorials of the correct movements and how to do them. Gave up on the app because of new profitable app ideas and college.",
       completionDate: "October 2024",
       stats: [
@@ -74,7 +74,7 @@ const FinishedProjects = () => {
         { label: "Frontend", value: "React Native" },
         { label: "Database", value: "PostgreSQL" },
       ],
-      imageUrl: "/projects/fitness-tracker.png",
+      imageUrl: null,
       socialLinks: [
         { platform: "github", url: "https://github.com/dxmv/fitness-tracker" },
       ]

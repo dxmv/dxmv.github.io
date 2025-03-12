@@ -22,7 +22,6 @@ const technologies = [
   { icon: <SiTailwindcss className="w-12 h-12" />, name: "Tailwind CSS" },
   { icon: <SiPostgresql className="w-12 h-12" />, name: "PostgreSQL" },
   { icon: <SiMongodb className="w-12 h-12" />, name: "MongoDB" },
-  { icon: <FaDocker className="w-12 h-12" />, name: "Docker" },
   { icon: <FaGitAlt className="w-12 h-12" />, name: "Git" },
   { icon: <SiCplusplus className="w-12 h-12" />, name: "C++" },
 ]
@@ -54,8 +53,8 @@ const Hero = () => {
         {/* Left column - Text content */}
         <div className="flex-1 max-w-2xl">
           <span className="text-l text-light-white">Hello, my name is</span>
-          <h1 className="font-bold mt-1 text-6xl text-dark-purple">Dimitrije Stepanović</h1>
-          <h2 className="flex mt-1 items-center gap-2 font-bold text-2xl text-blue"> <MapPin size={24}/> Belgrade, Serbia</h2>
+          <h1 className="font-bold mt-1 text-6xl text-blue">Dimitrije Stepanović</h1>
+          <h2 className="flex mt-1 items-center gap-2 font-bold text-2xl text-dark-purple"> <MapPin size={24}/> Belgrade, Serbia</h2>
           <div className="flex flex-wrap gap-2 my-8">
             {tags.map((tag) => (
               <HeroTag key={tag} tag={tag} />

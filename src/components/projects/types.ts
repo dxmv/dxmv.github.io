@@ -18,7 +18,7 @@ export interface FinishedProject {
     label: string;
     value: string;
   }[];
-  imageUrl: string;
+  imageUrl: string | null;
   socialLinks: {
     platform: string;
     url: string;
