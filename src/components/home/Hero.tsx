@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react"
 import SocialMediaLinks from "../reusable/SocialMediaLinks"
-import { FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaJava } from 'react-icons/fa'
 import { SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiSpringboot, SiFlask, SiCplusplus } from 'react-icons/si'
 
 // tags that describe me

@@ -6,7 +6,7 @@ interface ProjectSectionProps {
   index: number;
 }
 
-const ProjectSection = ({ project, index }: ProjectSectionProps) => {
+const ProjectSection = ({ project }: ProjectSectionProps) => {
   const getSocialIcon = (platform: string) => {
     switch (platform) {
       case 'github':
